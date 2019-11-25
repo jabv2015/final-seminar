@@ -81,20 +81,35 @@ class: inverse, center, middle
 
  <!-- + **Reporting a phenomenon of increasing inequality** (Berg & Ostry, 2017; Ostry, Berg, & Tsangarides, 2014; Cingano, 2014; OECD, 2014). --> 
 
-+ **Causes of income inequality** include **levels of income at initial stages** of economic development (Kuznets, 1955), **Globalization** (Milanovic, 2016), **Skill-biased technological change** (Tinbergen, 1975), investment in **human capital** (Murphy & Topel, 2016), **Institutions**, **redistributive policy** and **country-specific characteristics** (Acemoglu, 1995, 2002; Acemoglu et al., 2001a, 2001c)
++ **Causes of income inequality** include **Globalization** (Milanovic, 2016), **Skill-biased technological change** (Tinbergen, 1975), investment in **human capital** (Murphy & Topel, 2016), **Institutions**, **redistributive policy** and **country-specific characteristics** (Acemoglu, 1995, 2002; Acemoglu et al., 2001a, 2001c)
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
 
+--
+
 ### The endowment of natural resources can influence inequality by:
+
+--
+
 + Determining its **initial levels** (Engerman & Sokoloff, 1994, 1997; Engerman, Sokoloff, Urquiola, & Acemoglu, 2002), 
+--
+
 + Shaping the evolution of **institutions** (Acemoglu, 2002), 
+
+--
+
 + Dumbing the **educational system** and moulding the **structure of economic activity** (Leamer, Maul, Rodriguez, & Schott, 1999)
+
+--
+
 + **Rent-seeking**, **delays in manufacturing and technology adoption** and **lower incentives for investment in physical and human capital** (Gylfason & Zoega, 2003).
+
+--
+
 + Impact on economic growth (**“Natural Resource Curse Hypothesis”**) 
-+ Effect on social cohesion and instability, spreading its influence like a **disease**
 
 ---
 # Research so far
@@ -342,7 +357,11 @@ where
 u=\rho Wu+\varepsilon
 \end{equation}
 
+--
+
 + $W$ is our weight matrix that works as a NxN spatial lag operator (**Spatial Lag**: Weighted sum of the values observed at neighboring locations) 
+
+--
 
 + Thus, the parameter: 
   + $\lambda$ capture the influence of the spatial lag for the dependent variable, $Wy$,
@@ -436,6 +455,8 @@ participation of the primary sector in terms of employment in the Chilean econom
 + Data availability at the county level
 + Results do not allow us to make causal inferences about the effect of NRD on income inequality
 + Results are sensitive to the specification of the spatial weights
+
+--
 
 ### Future Research
 + "Innovative" ways to define "distance" and W.
@@ -615,9 +636,7 @@ Why (how) can inequality influence LGE?:
 
 --
 
-+ **Proposed Instrument**: 
-
-$$pss\_firms = \frac{\text{Number of firms in primary sector}}{\text{Total number of firms}}$$
++ **Proposed Instrument**: $pss\_firms = \frac{\text{Number of firms in primary sector}}{\text{Total number of firms}}$
 
 <div class="my-footer"><span>Local Government Efficiency 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -634,8 +653,8 @@ class: center
 
 ### Evolution Efficiency Scores by Zone (Full Period) 
 
-
-![](images/ES_animation.gif)
+ <!-- ![](images/fig7.png) --> 
+![](images/ES_animation.gif) 
 
 
 <div class="my-footer"><span>Local Government Efficiency 
@@ -652,6 +671,8 @@ class: center
 .pull-left[
 <img src="images/tab_ES_VRS.png">
 ]
+
+--
 
 .pull-right[
 <img src="images/chilean_municipalities.gif" width = "75%">
@@ -677,6 +698,8 @@ To test our hypothesis, the empirical model is defined as:
 \theta_{it} = \beta_1 gini_{it}+ Z_{it}\beta + \delta_{t} + \alpha_{i}+\epsilon_{it}
 \end{equation}
 
+--
+
 Where: 
 
 - $\theta_{it}$ is the vector of efficiency scores from the DEA analysis, 
@@ -691,6 +714,11 @@ Where:
 
 - $\epsilon_{it}$ is a vector of error terms and 
 
+
+<div class="my-footer"><span>Local Government Efficiency 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
 ---
 class: center
 
@@ -718,7 +746,13 @@ background-size: contain
 
 + **DEA**
   + The "production function" of municipalities shows variable returns to scale.
+
+--
+
   + The average level of inefficiency is 17%, with higher levels in the South area of the country.
+
+--
+
   + Efficiency shows a ciclical behaviour and, on average, has remained stable in the period 2006 - 2017.
 
 --
@@ -792,6 +826,8 @@ class: inverse, center, middle
 
 There two types of incivilities:
 + **Social incivilities** include antisocial behaviours such as public drinking, noisy neighbours, fighting in public places and street drug sales. 
+--
+
 + **Physical incivilities** include, among others, vandalism, graffiti, abandoned cars and garbage on the streets.
 
 --
@@ -842,7 +878,13 @@ Incivilities have been associated with:
 
 #### Chilean evidence: 
 + Focussed on crime and showing weak and ambiguous results
+
+--
+
   + **Indicators of socio-economic disadvantage** would only have significant effects on property crime (Beyer & Vergara, 2006; Nuñez, Rivera, Villavicencio, & Molina, 2003; Rivera, Gutiérrez, & Núñez,2009). 
+
+--
+
   + **Crime deterrence variables**: The probability of being caught or the number of police resources (Beyer & Vergara, 2006; Rivera et al., 2009; Vergara, 2012).
 
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
@@ -874,17 +916,19 @@ class: center, middle, inverse
 > $H_1$: Incivilities will be higher in counties with high levels of inequality.  
 
 &NewLine;
-
+<br>
 --
 
 > $H_2$: Incivilities will be higher in counties with a high proportion of the young population.
 
 &NewLine;
+<br>
 --
 
 > $H_3$: Incivilities will be higher in counties with a high proportion of foreign inhabitants.
 
 &NewLine;
+<br>
 --
 
 > $H_4$: Incivilities will be lower in counties managed by municipalities more autonomous from central government transfers.
@@ -902,15 +946,26 @@ In general, the relationship (effect) with incivilities depend on whether the va
 
 + Data on the number of **incivilities** were obtained from the **“Centre of Studies and Analysis of Crime”** (Chilean government) 
 
+--
+
 + Dependent variable:
+
+--
 
 \begin{equation}
 inciv\_rate=\frac{incivilities_{it}}{n_{it}}*1000;
 \end{equation}
 
+--
+
   + Where $inciv\_rate$ is the incivilities rate, $t$ is the year, $i$ the county and $n$ is the population of the county per year.
 
+--
+
 + Independent variable:
+
+--
+
   + The **Gini coefficient** is calculated for each county
 and included through the variable _gini_.
 
@@ -921,15 +976,22 @@ and included through the variable _gini_.
 
 ---
 class: center
-## Evolution Average County Rate of Incivilities <br>per 1000 inhabitants
+### Evolution Average County Rate of Incivilities per 1000 inhabitants
 
-![](images/incivvscrimeb_animation.gif)
+ <!-- <img src="images/fig8.png" alt="drawing" width="7000"/> --> 
+![](images/incivvscrimeb_animation.gif) 
+ 
+<div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
 
 ---
 class: center
 ## Evolution Total Number of Incivilities by Category
 
-![](images/incivcategories_animation2.gif)
+![](images/fig9.png)
+ <!-- ![](images/incivcategories_animation2.gif) --> 
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -951,6 +1013,8 @@ class: center
 
 + Considering as the response variable the count of incivilities:
 
+--
+
 \begin{equation}
 \lambda_{it} =exp(\beta_0 + \beta_1gini_{it} + X\gamma+\alpha_i +\theta_t)
 \end{equation}
@@ -967,11 +1031,17 @@ class: center
 
 + To account for differences in county population, we have:
 
+--
+
 \begin{equation}
 \frac{\lambda_{it}}{(\frac{population_{it}}{1000})} =exp(\beta_0 + \beta_1gini_{it} + X\gamma+\alpha_i +\theta_t)
 \end{equation}
 
+--
+
 + The model estimated using Maximum Likelihood Estimation (MLE) is:
+
+--
 
 \begin{equation}
 log(\lambda_{it}) = \beta_0 + \beta_1gini_{it} + X\gamma+\alpha_i +\theta_t+log(\frac{population_{it}}{1000})
@@ -1070,4 +1140,9 @@ class: inverse, center, middle
 --
 
 # Questions?
+
+
+```{r pdf, eval=FALSE, include=FALSE}
+pagedown::chrome_print("C:/Users/n9675230/OneDrive - Queensland University of Technology/R/gh-repos/final-seminar/index.Rmd")
+```
 
