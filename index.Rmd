@@ -19,8 +19,7 @@ csl: apa.csl
 ---
 
 class: center, middle, inverse
-background-image: url(images/MARCHA.jpg)
-background-size: cover
+
 # Motivation
 
 --
@@ -30,6 +29,14 @@ background-size: cover
 --
 
 .right[<i>An interview with Michael Kumhof by Mikael Feldbaum, https://www.eurozine.com, 2012</i>]
+---
+class: center, bottom, inverse
+background-image: url(images/MARCHA.jpg)
+background-size: cover
+
+
+
+### "If income gaps are not reduced, the next crisis will happen as surely as autumn follows summer"
 
 ---
 class: inverse, center, middle
