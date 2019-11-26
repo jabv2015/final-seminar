@@ -50,21 +50,19 @@ class: inverse, center, middle
 
 (Brunori, Ferreira, & Peragine, 2013; R. Kanbur, 2005; S. M. R. Kanbur & Venables, 2005; Milanovic, 2016; Ocampo, 2004)
 
---
+???
++ Inequality plays a secondary role in the design of economic policy compared to efficiency measures such as Economic Growth
++ The above is reflected in:
+  - justifications to delay reforms
+  - data availability
 
-## The issue of inequality has taken a secondary place in the design of economic policy compared to efficiency measures such as Economic Growth
-
---
-
- <!-- + Among **consequences**:
++ Extant literature has documented a link between (**consequences of**) inequality and:
   + **Unemployment**, **increasing fiscal expenses**, **indebtedness** and **political instability** (Berg & Ostry,2011). 
   + **crime rates**, **teenage pregnancy**, **obesity**, and **fewer opportunities** to invest in health and education(Atkinson, 2015). 
   + Inequality of opportunities hampers **social and economic mobility**, **trust** and **social cohesion**.
   + Slow down **economic growth** by making it less inclusive and sustainable --> 
-???
-For instance, reflected in:
-- justifications to delay reforms
-- data availability
+
+
 
 ---
 class: inverse, center, middle
@@ -117,8 +115,8 @@ class: inverse, center, middle
 --
 
 ### Evidence for the Chilean economy has documented
-+ High and persistent levels of income inequality
-+ Significant spatial dimension (Aroca & Bosch, 2000; Paredes, Iturra, & Lufin, 2016)
++ **High and persistent** levels of **income inequality**
++ Significant **spatial dimension** (Aroca & Bosch, 2000; Paredes, Iturra, & Lufin, 2016)
 
 --
 
@@ -129,6 +127,9 @@ class: inverse, center, middle
 
 + Using **spatial methods** to analyse the nature of the spatial effects:
   + **Spatial heterogeneity** (different relationships in distinct locations)
+
+--
+
   + **Spatial dependence** (cross-sectional interactions such as spillover
 effects among units from distinct locations)
 
@@ -192,9 +193,21 @@ effects among units from distinct locations)
 # Data and Variables
 
 + Merging of the following datasets: 
+
+--
+
   + Six waves of CASEN Survey for household data (years 2006-2009-2011-2013-2015-2017)  
+
+--
+
   + SINIM for information about municipalities
+
+--
+
   + INE for population data
+
+--
+
   + SII for data on employment and number of firms
 
 --
@@ -214,7 +227,7 @@ effects among units from distinct locations)
 .pull-right[
 ### Independent Variable
 
-**Measure of natural resource dependence**: Employment in the primary sector (mining, fishing, forestry and agriculture) as a percentage of the total employment in each county
+**Measure of natural resource dependence**: Percentage of employment in the primary sector (mining, fishing, forestry and agriculture) in each county
 ]
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
@@ -243,36 +256,32 @@ name: sa
 #### What do we mean by "spatial approach"?
 
 
-+ Mapping the spatial distribution of the [variable](#gini-nrd-maps)
++ **Mapping** the spatial distribution of the [variable](#gini-nrd-maps)
 
 --
 
-+ Defining the relevant neighborhood for each county (matrix **W**).
++ **Defining** the relevant **neighborhood** for each county (matrix **W**).
 
 --
 
-+ Testing the significance of the spatial patterns (Spatial Autocorrelation)
++ **Testing** the significance of the spatial patterns (**Spatial Autocorrelation**)
 
 --
 
-+ Checking whether the clustering pattern in inequality is the result of a process of spatial dependence in the variable itself or it can be explained by other variables:
++ Is the **clustering pattern** in inequality the result of a process of spatial dependence in the variable itself or it **can be explained by other variables?**
 
 --
 
-  + Run an OLS regression of Gini against NRD and controls
+  + Run an **OLS regression** of Gini against NRD and controls
 
 --
 
-  + Test for spatial autocorrelation in the OLS residuals
+  + Test for **spatial autocorrelation** in the **OLS residuals**
 
 --
 
-+ Using spatial models to find the spatial structure that best fits the clustering process of income inequality after controlling for other variables
++ Using **spatial models**  (cross-sectional and panel) to find the spatial structure that best fits the clustering process of income inequality after controlling for other variables
 
---
-
-  + Spatial cross-sectional models
-  + Spatial static panel models
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -290,11 +299,15 @@ class: inverse, center, middle
 ## Testing spatial correlation (Moran's I)
 
 .pull-left[
+
 + $H_0$: Spatial randomness (I = 0)  
+
+
 + $H_1$: Spatial autocorrelation:
     + Positive (I > 0)
     + Netagive (I < 0)
 
+<br>
 #### Positive Spatial Autocorrelation: 
 
 > Counties with similar levels of inequality tend to be close each other
@@ -319,6 +332,9 @@ class: inverse, center, middle
 
 + We run the model:
 
+--
+
+
 \begin{align}
 &gini_i = \beta_0 + \beta_1 pss\_casen + \beta_2 lnincome + \beta_3 poverty  + \beta_4 unemployment +\\
 &\qquad \quad \beta_5 labour\_force + \beta_6 education + \beta_7 lndensity + \beta_8 rural + \\ 
@@ -329,6 +345,8 @@ class: inverse, center, middle
 
 .pull-left[
 + We get the OLS residuals
+
+<br>
 + We test for spatial autocorrelation in OLS residuals
 ]
 
@@ -364,9 +382,21 @@ u=\rho Wu+\varepsilon
 --
 
 + Thus, the parameter: 
+
+--
+
   + $\lambda$ capture the influence of the spatial lag for the dependent variable, $Wy$,
+
+--
+
   + $\gamma$ capture the influence of the spatial lag for the explanatory variables, $WX$, 
+
+--
+
   + $\rho$ capture the influence of the spatial lag for the errors, $Wu$,
+
+--
+
   + $\epsilon$ is a vector of idiosyncratic errors.
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
@@ -423,24 +453,24 @@ class: center
 ---
 # Discussion and Recomendations
 
-+ Contrary to our main hypothesis, NRD shows a significant and negative association with income inequality.  
++ Contrary to our main hypothesis, **NRD shows a significant and negative association with income inequality**.  
 
 --
 
-+ This result is robust to the type of analysis (cross-sectional vs panel data), the approach (spatial vs nonspatial) and the inclusion of different controls.
++ This **result is robust** to the type of analysis (cross-sectional vs panel data), the approach (spatial vs nonspatial) and the inclusion of different controls.
 
 --
 
-+ Implication: The downward trend in the
-participation of the primary sector in terms of employment in the Chilean economy could be one of the main reasons explaining the high persistence in the levels of income inequality.
++ Implication: **The downward trend in the
+participation of the primary sector in terms of employment in the Chilean economy could be one of the reasons explaining the high persistence in the levels of income inequality**.
 
 --
 
-+ Policies oriented to transform the structure of local economies to less dependent ones on natural resources will generate additional challenges for local and central governments in their attemps to reduce inequality  
++ **Policies** oriented to transform the structure of local economies to less dependent ones on natural resources will generate additional challenges for local and central governments in their attemps to reduce inequality  
 
 --
 
-+ Education and municipal expenditure seem to be effective policy tools aiming to reduce inequality in Chile.
++ **Education and municipal expenditure** seem to be **effective** policy tools aiming **to reduce inequality in Chile**.
 
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
@@ -485,11 +515,11 @@ class: inverse, center, middle
 
 --
 
-  + Pursuing equality can reduce efficiency (see Okun 1975; Browning & Johnson 1984; Andersen & Maibom 2016)   
+  + Pursuing **equality can reduce efficiency** (see Okun 1975; Browning & Johnson 1984; Andersen & Maibom 2016)   
 
 --
 
-  + But, equality could also be an important ingredient in promoting and sustaining growth (see Berg & Ostry 2011; kumhof, Rancière & Winant 2015)
+  + But, equality **could also be an important ingredient in promoting and sustaining growth** (see Berg & Ostry 2011; kumhof, Rancière & Winant 2015)
 
 --
 
@@ -499,9 +529,10 @@ class: inverse, center, middle
 
 .pull-left[
 #### Measuring LGE
-+ Provision of single services vs overall efficiency
-+ Parametric (SFA) vs non-parametric (DEA) measurement techniques 
-+ Input oriented vs output oriented approach and selection of inputs and outputs
++ Single service vs overall efficiency
++ Parametric (SFA) vs **non-parametric (DEA)** techniques 
++ Input oriented vs output oriented
++ Selection of inputs and outputs
 
 ]
 
@@ -509,9 +540,9 @@ class: inverse, center, middle
 .pull-right[
 #### Explaining differences in LGE
 
-+ Discretionary factors (associated with the measurement process)
++ Discretionary factors (inputs and outputs)
 
-+ Non-discretionary (contextual) factors including economic, financial, social, demographic, geographic, political and institutional characteristics.
++ **Non-discretionary (contextual) factors**: Socio-economic, demographic, geographic, political, institutional, etc.
 ]
 
 <div class="my-footer"><span>Local Government Efficiency 
@@ -579,24 +610,39 @@ Why (how) can inequality influence LGE?:
   + Small richest groups can exert a higher influence over local authorities (priorities) resulting in low quality and quantity of services for most of the county population.
   + Lower inequality with high mean income should be associated with a higher monitoring and demand for an efficient performance from tax payers (not only "the richest group").
 ---
-
+name: data-DEA
 # Data
 
-### First Stage (DEA): Inputs - Output used to measure LGE  
+### First Stage (DEA): [Inputs - Output](#inputs-outputs-summary) used to measure LGE  
 
 + National System of Municipal Information, SINIM (2006-2017)
+
+--
+
 + Sample of 324 municipalities (3888 observations)
 
 --
 
-### County-Level Data on Contextual Factors
+### County-Level Data on [Contextual Factors](#EF)
 
 --
 
 + National Socioeconomic Characterization Survey, CASEN (2006 - 2009 - 2011 - 2013 - 2015 - 2017)  
+
+--
+
 + SINIM
+
+--
+
 + "Servicio de Impuestos Internos", SII
+
+--
+
 + National Institute of statistics, INE
+
+--
+
 + in total 1944 observations
 
 <div class="my-footer"><span>Local Government Efficiency 
@@ -627,7 +673,13 @@ Why (how) can inequality influence LGE?:
 --
 
 + **Independent variables**: 
+
+--
+
   + Measure of Income inequality + Remaining contextual factors
+
+--
+
   + County (zone) specific + time effects
 
 --
@@ -643,6 +695,8 @@ Why (how) can inequality influence LGE?:
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
 
+???
+Challenges measuring LGE:
 ---
 class: center, middle, inverse
 
@@ -653,8 +707,10 @@ class: center
 
 ### Evolution Efficiency Scores by Zone (Full Period) 
 
+<img src="images/ES_animation.gif" alt="drawing" width="600"/>
+
  <!-- ![](images/fig7.png) --> 
-![](images/ES_animation.gif) 
+ <!-- ![](images/ES_animation.gif) -->  
 
 
 <div class="my-footer"><span>Local Government Efficiency 
@@ -740,27 +796,35 @@ background-image: url(images/tab_panel_censc.png)
 background-size: contain
 
 ---
-# Discussion and Recomendations
-
-## Main results
+# Main results
 
 --
 
 + **DEA**
-  + The "production function" of municipalities shows variable returns to scale.
 
 --
 
-  + The average level of inefficiency is 17%, with higher levels in the South area of the country.
+  + The **"production function"** of municipalities **shows variable returns to scale**.
 
 --
 
-  + Efficiency shows a ciclical behaviour and, on average, has remained stable in the period 2006 - 2017.
+  + The **average level of inefficiency is 17%**, with higher levels in the South area of the country.
+
+--
+
+  + Efficiency shows a **ciclical behaviour** and, on average, has remained stable in the period 2006 - 2017.
 
 --
 
 + **Regression analysis**
-  + Empirical **evidence of a negative relationship between inequality and efficiency**, that is, a reduction of income inequality (or an increase in equality) could have positive effects on economic efficiency, at least at the level of local governments.
+
+--
+
+  + Empirical **evidence of a negative relationship between inequality and efficiency**.
+
+--
+
+  + A **reduction of income inequality** (or an increase in equality) **could have positive effects on economic efficiency**, at least at the **level of local governments**.
 
 <div class="my-footer"><span>Local Government Efficiency 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -785,11 +849,11 @@ background-size: contain
 
 --
 
-- Include some output capturing the quality in the provision of public services
+- How to capture **quality** in the provision of public services
 
 --
 
-- Alternatives IV´s (?)
+- Modelling spatial dependence-heterogeneity in LGE and use of alternatives IV´s.
 
 --
 
@@ -797,17 +861,19 @@ background-size: contain
 
 --
 
-- Modelling spatial dependence-heterogeneity in LGE.
+- Predictive analylitics (Machine Learning?) for the probability to get an eficient performance.
 
 --
 
-- Given the current situation of the country: What about the issue of **reverse causality?**
+- Given the current situation: What about the issue of **reverse causality?**
 
 <div class="my-footer"><span>Local Government Efficiency 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
 
+???
+Probability not only about getting a technical efficient performance but also an scale efficient specifically.
 ---
 class: inverse, center, middle
 
@@ -874,7 +940,7 @@ Incivilities have been associated with:
 
 #### The "Incivilities Thesis"
 
->Incivilities are caused by inequality and the lack of informal mechanisms of social control. The patterns of incivilities should mirror the patterns of inequality (Taylor, 1999)
+>Incivilities are caused by inequality and the lack of informal mechanisms of social control. **The patterns of incivilities should mirror the patterns of inequality** (Taylor, 1999)
 
 --
 
@@ -1089,7 +1155,7 @@ class: center
 
 --
 
-+ Efforts managed from the municipalities can be an important complement to those from the central government.
++ Efforts managed from the **municipalities** can be an important complement to those from the central government.
 
 --
 
@@ -1148,3 +1214,43 @@ class: inverse, center, middle
 pagedown::chrome_print("C:/Users/n9675230/OneDrive - Queensland University of Technology/R/gh-repos/final-seminar/index.Rmd")
 ```
 
+---
+class: center
+name: input-outputs
+## Appendix 1
+
+![](images/LGE.map.png)
+
+---
+class: center
+name: inputs-outputs-summary
+## Appendix 2
+
+#### Inputs and outputs used in [DEA](#data-DEA): Summary Statistics
+
+![](images/tab_inout.png)
+
+---
+class: center
+name: EF
+## Appendix 3
+
+#### [Contextual Factors](#data-DEA): Summary Statistics
+![](images/tab_EF2_summary.png)
+
+---
+class: center
+name: cormat1
+## Appendix 4
+![](images/cormat1.png)
+---
+class: center
+name: cormat2
+## Appendix 5
+![](images/tab_cormat2.png)
+
+---
+class: center
+name: cormat3
+## Appendix 6
+![](images/cormat3.png)
