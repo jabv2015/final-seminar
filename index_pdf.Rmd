@@ -18,7 +18,7 @@ bibliography: r-references.bib
 csl: apa.csl
 ---
 
-class: center, middle, inverse
+class: center, middle
 
 # Motivation
 
@@ -30,7 +30,7 @@ class: center, middle, inverse
 
 .right[<i>An interview with Michael Kumhof by Mikael Feldbaum, https://www.eurozine.com, 2012</i>]
 ---
-class: center, bottom, inverse
+class: center, bottom
 background-image: url(images/MARCHA.jpg)
 background-size: cover
 
@@ -39,7 +39,7 @@ background-size: cover
 ### "If income gaps are not reduced, the next crisis will happen as surely as autumn follows summer"
 
 ---
-class: inverse, center, middle
+class: center, middle
 
 # General Research problem
 
@@ -65,7 +65,7 @@ class: inverse, center, middle
 
 
 ---
-class: inverse, center, middle
+class: , center, middle
 
 # Essay 1:
 
@@ -291,7 +291,7 @@ name: sa
 ???
 The interaction is throughout space, not time
 ---
-class: inverse, center, middle
+class: , center, middle
 
 # Results
 
@@ -499,7 +499,7 @@ participation of the primary sector in terms of employment in the Chilean econom
 </span></div> 
 
 ---
-class: inverse, center, middle
+class: , center, middle
 
 # Essay 2:
 
@@ -651,7 +651,6 @@ name: data-DEA
 </span></div> 
 
 ---
-name: TSA
 # Methodology: Two Stage Approach
 
 --
@@ -660,7 +659,7 @@ name: TSA
 
 --
 
-+ Input oriented assuming variable [returns to scale](#rts)
++ Input oriented assuming variable returns to scale
 + Result: A vector of **efficiency scores (ES)** for each municipality
 
 --
@@ -699,7 +698,7 @@ name: TSA
 ???
 Challenges measuring LGE:
 ---
-class: center, middle, inverse
+class: center, middle, 
 
 # First Stage: DEA Results
 ---
@@ -708,9 +707,9 @@ class: center
 
 ### Evolution Efficiency Scores by Zone (Full Period) 
 
-<img src="images/ES_animation.gif" alt="drawing" width="600"/>
+ <!-- <img src="images/ES_animation.gif" alt="drawing" width="600"/> --> 
 
- <!-- ![](images/fig7.png) --> 
+![](images/fig7.png) 
  <!-- ![](images/ES_animation.gif) -->  
 
 
@@ -725,23 +724,21 @@ class: center
 
 ### Efficiency Scores by Zone and Region
 
-.pull-left[
-<img src="images/tab_es_VRS.png">
-]
-
---
-
-.pull-right[
-<img src="images/chilean_municipalities.gif" width = "75%">
-]
+<img src="images/tab_es_VRS.png" width = "80%">
 
 <div class="my-footer"><span>Local Government Efficiency 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
+---
+background-image: url(images/status_six.png)
+background-size: contain
+ <!-- .pull-right[
+<img src="images/chilean_municipalities.gif" width = "75%">
+] --> 
 
 ---
-class: center, middle, inverse
+class: center, middle, 
 
 # Second Stage
 
@@ -876,7 +873,7 @@ background-size: contain
 ???
 Probability not only about getting a technical efficient performance but also an scale efficient specifically.
 ---
-class: inverse, center, middle
+class: , center, middle
 
 # Essay 3:
 
@@ -964,7 +961,7 @@ Incivilities have been associated with:
 ???
 In Chile there is no evidence about causes of incivilities, but the BRoken Windows Theory has been used to argue new punitive actions to reduce crime, victimization and the feeling of insecutity in the population 
 ---
-class: center, middle, inverse
+class: center, middle, 
 
 # Research Question
 
@@ -1047,8 +1044,8 @@ and included through the variable _gini_.
 class: center
 ### Evolution Average County Rate of Incivilities per 1000 inhabitants
 
- <!-- <img src="images/fig8.png" alt="drawing" width="7000"/> --> 
-![](images/incivvscrimeb_animation.gif) 
+<img src="images/fig8.png" alt="drawing" width="7000"/>
+ <!-- ![](images/incivvscrimeb_animation.gif) --> 
  
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -1123,8 +1120,7 @@ log(\lambda_{it}) = \beta_0 + \beta_1gini_{it} + X\gamma+\alpha_i +\theta_t+log(
 
 ---
 class: center
-name: poisson
-#### Results: [Poisson](#interpretation) Regression
+#### Results: Poisson Regression
 
 ![](images/poisson2.png)
 
@@ -1197,7 +1193,7 @@ The political result is the only one significant among the thesis studies
 background-image: url(images/paz.jpg)
 background-size: cover
 
-class: inverse, center, middle
+class: center, middle, inverse
 
 --
 
@@ -1213,86 +1209,6 @@ class: inverse, center, middle
 
 
 ```{r pdf, eval=FALSE, include=FALSE}
-pagedown::chrome_print("C:/Users/n9675230/OneDrive - Queensland University of Technology/R/gh-repos/final-seminar/index.Rmd")
+pagedown::chrome_print("C:/Users/n9675230/OneDrive - Queensland University of Technology/R/gh-repos/final-seminar/index_pdf.Rmd")
 ```
 
----
-class: center
-name: input-outputs
-## Appendix [1](#data-DEA)
-
-![](images/LGE.map.png)
-
----
-class: center
-name: inputs-outputs-summary
-## Appendix 2
-
-#### Inputs and outputs used in [DEA](#data-DEA): Summary Statistics
-
-![](images/tab_inout.png)
-
----
-class: center
-name: EF
-## Appendix 3
-
-#### [Contextual Factors](#data-DEA): Summary Statistics
-![](images/tab_EF2_summary.png)
-
----
-class: center
-name: cormat1
-## Appendix 4
-![](images/cormat1.png)
----
-class: center
-name: cormat2
-## Appendix 5
-![](images/tab_cormat2.png)
-
----
-class: center
-name: cormat3
-## Appendix 6
-![](images/cormat3.png)
-
----
-class: center
-name: rts
-## Appendix [7](#TSA)
-![](images/fig6.png)
-
----
-class: center
-## Appendix [8](#poisson)
-
-### Interpreting coefficients Poisson (NB) Regression:
-
-.left[
-The coefficient for the variable gini in the FE Poisson model es 0.022. This means that:
-
-
-+ An increase in one unit in the Gini coefficient increases the log of count per 1000 inhabitants in 0.022.
-
-
-+ An increase in one unit in the Gini coefficient increases
-the rate of incivilities per 1000 inhabitants in $e^{0.022}=1.022$ times.  
-
-For the case of categorial variables, for instance, the variable mayorLEFT, the coefficient 0.048 for the Negative Binomial results means that:
-
-+ The incivilities rate per 1000 inhabitants in municipalities managed by "LEFT" political supported mayors is nearly 1.049 $(e^{0.048})$ times that of municipalities managed by INDEPENDENT mayors (given de other of controls).
-
-]
-
----
-class: center
-## Appendix 9
-
-![](images/chile_LA.png)
-
----
-class: center
-## Appendix 10
-
-![](images/chile_OECD.png)
