@@ -727,6 +727,11 @@ class: center
 
 .pull-left[
 <img src="images/tab_es_VRS.png">
+
+The **mean efficiency** score for the country and the full period is **0.83**.
+
+
+.left[This means, **municipalities could, on average, reduce the use of inputs in 17%** to get the same level of outputs]
 ]
 
 --
