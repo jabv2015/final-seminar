@@ -200,16 +200,18 @@ class: center, middle, inverse
 </span></div> 
 
 ---
-name: gini-nrd-maps 
+class: center
+name: chile
 
-## Gini and NRD: Spatial distribution ([average 2006-17](#sa))
+## Chile?
 
+```{r echo=FALSE, out.width='100%', fig.height=6, eval=require('leaflet')}
+library(leaflet)
+leaflet() %>% 
+  addTiles() %>% 
+  setView(lat = -34.415973, lng = -71.424132, zoom = 1)
+```
 
-
-<div class="my-footer"><span>Natural Resources: Curse or Blessing? 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-</span></div> 
 ---
 name: sa
 class: center, middle, inverse
