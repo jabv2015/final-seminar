@@ -43,13 +43,17 @@ class: center, middle
 
 # General Research problem
 
+--
+
 .left[Extant literature has documented as potential negative consequences of increasing inequality:
   + **Unemployment**, **increasing fiscal expenses**, **indebtedness** and **political instability**. 
-  + **crime rates**, **teenage pregnancy**, **obesity**, and **fewer opportunities** to invest in health and education. 
+  + **Crime rates**, **teenage pregnancy**, **obesity**, and **fewer opportunities** to invest in health and education. 
   + Inequality of opportunities hampers **social and economic mobility** and **trust**.
   + Slow down **economic growth** by making it less inclusive and sustainable
 ]
-  
+
+--
+
 ## Income inequality could have a significant effect on social cohesion and instability, spreading its influence like a *disease*
  <!-- (Brunori, Ferreira, & Peragine, 2013; R. Kanbur, 2005; S. M. R. Kanbur & Venables, 2005; Milanovic, 2016; Ocampo, 2004) --> 
 
@@ -150,6 +154,8 @@ class: center, middle, inverse
 
 # Data and Variables
 
+--
+
 + Merging of the following datasets: 
 
 --
@@ -170,12 +176,12 @@ class: center, middle, inverse
 
 --
 
-+ In total 1944 obsevations (324 municipalities in 6 years)
++ In total 1944 obsevations (324 counties in 6 years)
 
 --
 
 .pull-left[
-### Dependent Variable
+### Dep. Variable (_gini_ )
 
 **Gini coefficient** of outonomous income (the sum of labour income and non-labour income such as rents, interests and pensions) for each county.
 ]
@@ -183,7 +189,7 @@ class: center, middle, inverse
 --
 
 .pull-right[
-### Independent Variable
+### Indep. Variable (*pss_casen*)
 
 **Measure of natural resource dependence**: Percentage of employment in the primary sector (mining, fishing, forestry and agriculture) in each county
 ]
@@ -198,7 +204,7 @@ name: gini-nrd-maps
 
 ## Gini and NRD: Spatial distribution ([average 2006-17](#sa))
 
-![](images/fig1.png)
+
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -206,59 +212,38 @@ name: gini-nrd-maps
 </span></div> 
 ---
 name: sa
+class: center, middle, inverse
 
-# Methods: "Spatial Approach"
+# Methodology (Spatial Approach) <br>and<br> Results
 
---
+---
+class: center
+## How is the country geographically (spatially) divided?
 
-#### What do we mean by "spatial approach"?
-
-
-+ **Mapping** the spatial distribution of the [variable](#gini-nrd-maps)
-
---
-
-+ **Defining** the relevant **neighborhood** for each county (matrix **W**).
-
---
-
-+ **Testing** the significance of the spatial patterns (**Spatial Autocorrelation**)
-
---
-
-+ Is the **clustering pattern** in inequality the result of a process of spatial dependence in the variable itself or it **can be explained by other variables?**
-
---
-
-  + Run an **OLS regression** of Gini against NRD and controls
-
---
-
-  + Test for **spatial autocorrelation** in the **OLS residuals**
-
---
-
-+ Using **spatial models**  (cross-sectional and panel) to find the spatial structure that best fits the clustering process of income inequality after controlling for other variables
-
+![](images/fig3.png)
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
-
-???
-The interaction is throughout space, not time
 ---
-class: inverse, center, middle
+class: center
+## How are our main variables spatially distributed?
 
-# Results
+![](images/fig1.png)
 
+<div class="my-footer"><span>Natural Resources: Curse or Blessing? 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div>
 ---
-## Testing spatial correlation (Moran's I)
+class: center
+## Testing for spatial correlation (Moran's I)
 
+.left[
 ### Define "Neighbourhood" (W): 5-nearest neighbours
 So, we will be analysing how "similar" is the level of inequality in one county compared to the weighted average level of inequality in the 5-nearest neighbouring counties (this is know as the **Spatial Lag**)
-
+]
 --
 
 .pull-left[
@@ -293,10 +278,7 @@ Each point represent a county
 Each point is a combination between the Gini coefficient in one county and the average Gini coefficient of its neighbours
 So, in cuadrant I (III) are counties with high (low) inequality rounded by neighbours with high (low) inequality
 ---
-
-## Analysis of OLS residuals 
-
-+ We run the model:
+### Run an **OLS regression** of Gini against NRD (+ controls) and test for **spatial autocorrelation** in the **OLS residuals**
 
 --
 
@@ -331,6 +313,7 @@ So, in cuadrant I (III) are counties with high (low) inequality rounded by neigh
 
 ???
 How we justify the inclusion of these controls?
+Is the **clustering pattern** in inequality the result of a process of spatial dependence in the variable itself or it **can be explained by other variables?**
 ---
 ## Spatial Model Specification (Cross-Sectional)
 
@@ -356,15 +339,15 @@ u=\rho Wu+\varepsilon
 
 --
 
-  + $\lambda$ capture the influence of the spatial lag for the dependent variable, $Wy$,
+  + $\lambda$ capture the influence of the spatial lag for the dependent variable, $Wy$ (Spatial Autoregressive Model, **SAR**)
 
 --
 
-  + $\gamma$ capture the influence of the spatial lag for the explanatory variables, $WX$, 
+  + $\gamma$ capture the influence of the spatial lag for the explanatory variables, $WX$ (**SLX** model) 
 
 --
 
-  + $\rho$ capture the influence of the spatial lag for the errors, $Wu$,
+  + $\rho$ capture the influence of the spatial lag for the errors, $Wu$ (Spatial Error Model, **SEM**)
 
 --
 
@@ -486,7 +469,7 @@ class: inverse, center, middle
 
 # Research so far
 
-+ **Trade-off between efficiency and equity**:
++ Evidence on the **Trade-off** between **efficiency and equity** is not conclusive
 
 --
 
@@ -498,8 +481,8 @@ class: inverse, center, middle
 
 --
 
-+ **Local Government Efficiency (LGE)** studies focus on:
-
+  + **Local Government Efficiency (LGE)** studies have been focus on:
+  
 --
 
 .pull-left[
@@ -508,7 +491,6 @@ class: inverse, center, middle
 + Parametric (SFA) vs **non-parametric (DEA)** techniques 
 + Input oriented vs output oriented
 + Selection of inputs and outputs
-
 ]
 
 --
@@ -516,7 +498,6 @@ class: inverse, center, middle
 #### Explaining differences in LGE
 
 + Discretionary factors (inputs and outputs)
-
 + **Non-discretionary (contextual) factors**: Socio-economic, demographic, geographic, political, institutional, etc.
 ]
 
@@ -588,7 +569,7 @@ Why (how) can inequality influence LGE?:
 name: data-DEA
 # Data
 
-### First Stage (DEA): [Inputs - Output](#inputs-outputs-summary) used to measure LGE  
+### [Inputs - Output](#inputs-outputs-summary) used to measure LGE  
 
 + National System of Municipal Information, SINIM (2006-2017)
 
@@ -673,6 +654,17 @@ name: TSA
 
 ???
 Challenges measuring LGE:
+
+---
+class: center
+## How do we capture geographical differences in LGE?
+
+![](images/fig5.png)
+
+<div class="my-footer"><span>Local Government Efficiency 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
 ---
 class: center, middle, inverse
 
@@ -683,7 +675,7 @@ class: center
 
 ### Evolution Efficiency Scores by Zone (Full Period) 
 
-<img src="images/ES_animation.gif" alt="drawing" width="600"/>
+<img src="images/ES_animation.gif" alt="drawing" width="550"/>
 
  <!-- ![](images/fig7.png) --> 
  <!-- ![](images/ES_animation.gif) -->  
@@ -693,7 +685,6 @@ class: center
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
-
 ---
 name: es
 class: center
@@ -720,6 +711,8 @@ The **mean efficiency** score for the country and the full period is **0.83**.
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 </span></div> 
 
+???
+What if the determinants of efficiency are not the same as the determinants of inefficiency?
 ---
 class: center, middle, inverse
 
@@ -809,7 +802,7 @@ background-size: contain
   
 --
 
-  + Negative association with Education. Political Structure is not significant. 
+  + Negative association with **Education**. 
 
 <div class="my-footer"><span>Local Government Efficiency 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -855,6 +848,8 @@ background-size: contain
 
 ???
 Probability not only about getting a technical efficient performance but also an scale efficient specifically.
+
+interpretation: In the model without IV, the coefficient is around 0.2. This means that, if inequality fall in 5 points, efficiency should increase in only 1 point. But in the model with IV, the coefficient is around 1, so 5 less point in gini should be associated with and increase in efficiency in 5 (or more points). We are talking about long-term changes!
 ---
 class: inverse, center, middle
 
@@ -907,7 +902,7 @@ Incivilities have been associated with:
 --
 
 + Multiple negative **economic effects**:
-  + Reduction in commercial activity, lower investment in real state and reduction in house prices (Skogan, 2015)
+  + Reduction in commercial activity, lower investment in real estate and reduction in house prices (Skogan, 2015)
   + Population instability (Hipp, 2010).
 
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
@@ -1037,17 +1032,6 @@ class: center
 
 ---
 class: center
-## Evolution Total Number of Incivilities by Category
-
-![](images/fig9.png)
- <!-- ![](images/incivcategories_animation2.gif) --> 
-<div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-</span></div> 
-
----
-class: center
 ## Annual Average Number of Incivilities per County
 
 ![](images/fig11.png)
@@ -1104,20 +1088,9 @@ log(\lambda_{it}) = \beta_0 + \beta_1gini_{it} + X\gamma+\alpha_i +\theta_t+log(
 ---
 class: center
 name: poisson
-#### Results: [Poisson](#interpretation) Regression
+#### Results: [Poisson](#interpretation) [Regression](#nb)
 
 ![](images/poisson2.png)
-
-<div class="my-footer"><span>Does economic disadvantage diminish social cohesion?
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-</span></div> 
-
----
-class: center
-#### Results: Negative Binomial
-
-![](images/nb.png)
 
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion?
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -1139,10 +1112,6 @@ class: center
 
 + Efforts managed from the **municipalities** can be an important complement to those from the central government.
 
---
-
-+ Mayors supported by “LEFT” oriented political parties face higher challenges in terms of incivilities than those independent or RIGHT supported mayors.
-
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -1153,19 +1122,19 @@ The political result is the only one significant among the thesis studies
 ---
 # Conclusions and Future Research
 
-+ Increasing income inequality or persistently high levels might be associated with the rise of antisocial behaviours in the form of incivilities. 
++ **Increasing income inequality** or persistently high levels might be associated with the **rise of antisocial behaviours** in the form of incivilities. 
 
 --
 
-+ Future research should go further on the role of local authorities analysing the impact of specific programs in counties with similar characteristics.
++ Future research should go further on the **role of local authorities** analysing the impact of specific programs in counties with similar characteristics.
 
 --
 
-+ Program evaluation could help to elucidate the question of whether local interventions from the local governments have a causal effect on incivilities and crime rates. 
++ **Program evaluation** could help to elucidate the question of whether local interventions from the local governments have a causal effect on incivilities and crime rates. 
 
 --
 
-+ A deeper analysis of the impact that foreign migration is having on social cohesion in the Chilean society is an interesting avenue for future studies
++ A deeper analysis of the **impact that foreign migration is having on social cohesion in the Chilean society** is an interesting avenue for future studies
 
 
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion?
@@ -1276,3 +1245,16 @@ class: center
 ## Appendix 10
 
 ![](images/chile_OECD.png)
+---
+name: nb
+class: center
+## Appendix 11: [Negative Binomial](#poisson) Regression
+
+![](images/nb.png)
+
+---
+name: incivcat
+class: center
+## Appendix 12: Incivilities by Category
+
+![](images/fig9.png)
