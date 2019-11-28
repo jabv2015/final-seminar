@@ -18,7 +18,7 @@ bibliography: r-references.bib
 csl: apa.csl
 ---
 
-class: center, middle, inverse
+class: center, middle
 
 # Motivation
 
@@ -71,9 +71,9 @@ class: center, middle
   - data availability
 + The main contribution of this research: Better understanding of the causes and consequences of income inequality in NRRC
 ---
-class: inverse, center, middle
+class: center, middle
 
-# Essay 1:
+# Essay 1
 
 --
 
@@ -461,9 +461,9 @@ participation of the primary sector in terms of employment in the Chilean econom
 </span></div> 
 
 ---
-class: inverse, center, middle
+class: center
 
-# Essay 2:
+# Essay 2
 
 --
 
@@ -824,9 +824,9 @@ Probability not only about getting a technical efficient performance but also an
 
 interpretation: In the model without IV, the coefficient is around 0.2. This means that, if inequality fall in 5 points, efficiency should increase in only 1 point. But in the model with IV, the coefficient is around 1, so 5 less point in gini should be associated with and increase in efficiency in 5 (or more points). We are talking about long-term changes!
 ---
-class: inverse, center, middle
+class: center, middle
 
-# Essay 3:
+# Essay 3
 
 --
 
