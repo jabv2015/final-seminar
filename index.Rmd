@@ -183,7 +183,7 @@ class: center, middle, inverse
 
 --
 
-+ In total 1944 obsevations (324 counties in 6 years)
++ In total 1944 observations (324 counties in 6 years)
 
 --
 
@@ -216,7 +216,7 @@ name: chile
 library(leaflet)
 leaflet() %>% 
   addTiles() %>% 
-  setView(lat = -34.415973, lng = -71.424132, zoom = 1)
+  setView(lat = -34.415973, lng = -71.424132, zoom = 3)
 ```
 
 ---
