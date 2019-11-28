@@ -46,23 +46,30 @@ class: center, middle
 --
 
 .left[Extant literature has documented as potential negative consequences of increasing inequality:
-  + **Unemployment**, **increasing fiscal expenses**, **indebtedness** and **political instability**. 
-  + **Crime rates**, **teenage pregnancy**, **obesity**, and **fewer opportunities** to invest in health and education. 
-  + Inequality of opportunities hampers **social and economic mobility** and **trust**.
-  + Slow down **economic growth** by making it less inclusive and sustainable
+]
+
+--
+
+.left[
++ **Unemployment**, **increasing fiscal expenses**, **indebtedness** and **political instability** (Berg & Ostry,2011).   
++ **Crime rates**, **health** and **education** (Atkinson, 2015). 
++ **Social and economic mobility** and **trust**.
++ Slow down **economic growth** by making it less inclusive and sustainable.
 ]
 
 --
 
 ## Income inequality could have a significant effect on social cohesion and instability, spreading its influence like a *disease*
- <!-- (Brunori, Ferreira, & Peragine, 2013; R. Kanbur, 2005; S. M. R. Kanbur & Venables, 2005; Milanovic, 2016; Ocampo, 2004) --> 
+
+--
+
+.left[However, inequality still occupies a **secondary role** in the design of economic policy]
 
 ???
-+ A pesar de lo anterior, inequality plays a secondary role in the design of economic policy compared to efficiency measures such as Economic Growth
 + The above is reflected in:
   - justifications to delay reforms
   - data availability
-
++ The main contribution of this research: Better understanding of the causes and consecuences of income inequality in NRRC
 ---
 class: inverse, center, middle
 
@@ -203,7 +210,7 @@ class: center, middle, inverse
 class: center
 name: chile
 
-## Chile?
+# Where (What) is Chile?
 
 ```{r echo=FALSE, out.width='100%', fig.height=6, eval=require('leaflet')}
 library(leaflet)
