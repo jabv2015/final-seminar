@@ -179,10 +179,6 @@ class: center, middle, inverse
 
 --
 
-  + SII for data on employment and number of firms
-
---
-
 + In total 1944 observations (324 counties in 6 years)
 
 --
@@ -204,8 +200,13 @@ class: center, middle, inverse
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-</span></div> 
+</span></div>
 
+---
+name: sa
+class: center, middle, inverse
+
+# Methodology (Spatial Approach) <br>and<br> Results
 ---
 class: center
 name: chile
@@ -216,14 +217,8 @@ name: chile
 library(leaflet)
 leaflet() %>% 
   addTiles() %>% 
-  setView(lat = -34.415973, lng = -71.424132, zoom = 3)
+  setView(lat = -34.415973, lng = -71.424132, zoom = 1)
 ```
-
----
-name: sa
-class: center, middle, inverse
-
-# Methodology (Spatial Approach) <br>and<br> Results
 
 ---
 class: center
@@ -458,7 +453,7 @@ participation of the primary sector in terms of employment in the Chilean econom
 ### Future Research
 + "Innovative" ways to define "distance" and W.
 + Incorporate measures of commuting and migration between counties.
-+ Using measures of NRD as instrument for income inequality in studies about its consequences. 
++ In studies about causal effects of income inequality over other variables, we could use a measure of NRD as instrument for income inequality. 
 
 <div class="my-footer"><span>Natural Resources: Curse or Blessing? 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -490,7 +485,7 @@ class: inverse, center, middle
 
 --
 
-  + **Local Government Efficiency (LGE)** studies have been focus on:
++ **Local Government Efficiency (LGE)** studies have been focus on:
   
 --
 
@@ -516,46 +511,24 @@ class: inverse, center, middle
 </span></div> 
 
 ---
-# 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-.onehundredtwenty[
-##Research Question
-> What role does income inequality play in explaining differences in municipal efficiency? 
-]
-
-<div class="my-footer"><span>Local Government Efficiency 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-</span></div> 
-
----
-
-# Research Hypoteses
-
-### About the relationship between LGE and income inequality 
-
-> $H_1$: Income inequality has a negative effect on municipal efficiency.
-
-.right[
-<i>See Tandon ,2005; Jottier, Ashworth, & Heyndels, 2012; Ortega, Sanjuán, & Casquero, 2017</i>]
-
-<center>**Why?; How?**<center/>
+class: center, middle 
+#Research Question
 
 --
 
-### About the level of inefficiency of Chilean municipalities
+### What role does income inequality play in explaining differences in municipal efficiency? 
 
-> $H_2$: Chilean municipalities show an average level of inefficiency of 30%.
+--
 
-.right[
-<i>See Pacheco, Sanchez & Villena, 2013</i>
-]
+# Research Hypoteses
+
+--
+
+### $H_1$: Income inequality has a negative effect on municipal efficiency.
+
+--
+
+**Why?; How?**
 
 <div class="my-footer"><span>Local Government Efficiency 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -574,11 +547,12 @@ Why (how) can inequality influence LGE?:
   + It is used to capture the degree of heterogeneity in the demands that county population exerts over local authorities
   + Small richest groups can exert a higher influence over local authorities (priorities) resulting in low quality and quantity of services for most of the county population.
   + Lower inequality with high mean income should be associated with a higher monitoring and demand for an efficient performance from tax payers (not only "the richest group").
+  
 ---
 name: data-DEA
 # Data
 
-### [Inputs - Output](#inputs-outputs-summary) used to measure LGE  
+### [Inputs - Outputs](#inputs-outputs) used to measure LGE  
 
 + National System of Municipal Information, SINIM (2006-2017)
 
@@ -626,6 +600,7 @@ name: TSA
 --
 
 + Input oriented assuming variable [returns to scale](#rts)
++ [Five inputs and four outputs](#inputs-outputs-summary).
 + Result: A vector of **efficiency scores (ES)** for each municipality
 
 --
@@ -638,15 +613,7 @@ name: TSA
 
 --
 
-+ **Independent variables**: 
-
---
-
-  + Measure of Income inequality + Remaining contextual factors
-
---
-
-  + County (zone) specific + time effects
++ **Independent variables**: Measure of Income inequality + remaining contextual factors including county (zone) specific and time fixed effects
 
 --
 
@@ -948,43 +915,35 @@ Incivilities have been associated with:
 ???
 In Chile there is no evidence about causes of incivilities, but the BRoken Windows Theory has been used to argue new punitive actions to reduce crime, victimization and the feeling of insecutity in the population 
 ---
-class: center, middle, inverse
+class: center, middle
 
 # Research Question
 
 --
 
-# Do differences in the rate of incivilities mirror differences in income inequality between counties? 
+### Do differences in the rate of incivilities mirror differences in income inequality between counties? 
 
-<div class="my-footer"><span>Does economic disadvantage diminish social cohesion?
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-</span></div> 
-
----
-
-# Research Hypoteses
-
-
-> $H_1$: Incivilities will be higher in counties with high levels of inequality.  
-
-&NewLine;
-<br>
 --
 
-> $H_2$: Incivilities will be higher in counties with a high proportion of the young population.
+# Research Hypotheses
 
-&NewLine;
-<br>
 --
 
-> $H_3$: Incivilities will be higher in counties with a high proportion of foreign inhabitants.
+.left[
+#### $H_1$: Incivilities will be higher in counties with high levels of inequality.  
 
 &NewLine;
-<br>
---
 
-> $H_4$: Incivilities will be lower in counties managed by municipalities more autonomous from central government transfers.
+#### $H_2$: Incivilities will be higher in counties with a high proportion of the young population.
+
+&NewLine;
+
+#### $H_3$: Incivilities will be higher in counties with a high proportion of foreign inhabitants.
+
+&NewLine;
+
+#### $H_4$: Incivilities will be lower in counties managed by municipalities more autonomous from central government transfers.
+]
 
 <div class="my-footer"><span>Does economic disadvantage diminish social cohesion?
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -1115,6 +1074,8 @@ name: poisson
 
 + Policies aimed at controlling the behaviour of **young people** do not have strong empirical support. 
 
+--
+
 + The significant increase in the **foreign population** seems to be associated with a significant increase in the problem of incivilities. 
 
 --
@@ -1176,7 +1137,7 @@ pagedown::chrome_print("C:/Users/n9675230/OneDrive - Queensland University of Te
 
 ---
 class: center
-name: input-outputs
+name: inputs-outputs
 ## Appendix [1](#data-DEA)
 
 ![](images/LGE.map.png)
@@ -1186,7 +1147,7 @@ class: center
 name: inputs-outputs-summary
 ## Appendix 2
 
-#### Inputs and outputs used in [DEA](#data-DEA): Summary Statistics
+#### Inputs and outputs used in [DEA](#TSA): Summary Statistics
 
 ![](images/tab_inout.png)
 
