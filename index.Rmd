@@ -41,7 +41,7 @@ background-size: cover
 ---
 class: center, middle
 
-# General Research problem
+# General Research Problem
 
 --
 
